@@ -12,13 +12,13 @@ interface LanguagesProps {
 
 export function Languages({ languages }: LanguagesProps) {
   return (
-    <section className="w-full py-12 px-4 bg-white dark:bg-gray-900">
+    <section className="w-full px-4 bg-white dark:bg-gray-900">
       <div className="max-w-5xl mx-auto">
         <div className="flex items-center gap-3 mb-6">
           <LanguagesIcon className="w-6 h-6 text-primary" />
           <h2>Languages</h2>
         </div>
-        
+
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
           {languages.map((language, index) => (
             <div
