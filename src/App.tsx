@@ -194,67 +194,69 @@ export default function App() {
   ];
 
   return (
-    <div className="min-h-screen bg-background animate-fade-in">
+    <>
       <ThemeToggle isDark={isDarkMode} onToggle={toggleTheme} />
       <PrintButton />
 
-      <Header
-        photo={personalInfo.photo}
-        name={personalInfo.name}
-        description={personalInfo.description}
-        contacts={personalInfo.contacts}
-      />
+      <div className="min-h-screen bg-background animate-fade-in">
+        <Header
+          photo={personalInfo.photo}
+          name={personalInfo.name}
+          description={personalInfo.description}
+          contacts={personalInfo.contacts}
+        />
 
-      <section className="w-full py-12 px-4 bg-white dark:bg-gray-900 print:py-8">
-        <div className="max-w-5xl mx-auto">
-          <h2 className="mb-4">About Me</h2>
-          <div className="text-foreground/80">
-            <p className="mb-4">
-              I'm a Frontend Developer with 9+ years of experience specializing in React, TypeScript, and modern JavaScript.
-              My focus is on building scalable, high-performance applications with clean architecture and pixel-perfect UI.
-            </p>
+        <section className="w-full py-12 px-4 bg-white dark:bg-gray-900 print:py-8">
+          <div className="max-w-5xl mx-auto">
+            <h2 className="mb-4">About Me</h2>
+            <div className="text-foreground/80">
+              <p className="mb-4">
+                I'm a Frontend Developer with 9+ years of experience specializing in React, TypeScript, and modern JavaScript.
+                My focus is on building scalable, high-performance applications with clean architecture and pixel-perfect UI.
+              </p>
 
-            <ul className="space-y-2 mb-6">
-              <li className="flex gap-2">
-                <span className="text-blue-600 dark:text-blue-400">✅</span>
-                <span>Experienced in React Hooks, Redux, React Query, and state management patterns</span>
-              </li>
-              <li className="flex gap-2">
-                <span className="text-blue-600 dark:text-blue-400">✅</span>
-                <span>Skilled in CI/CD setup, automated testing, and reusable component libraries</span>
-              </li>
-              <li className="flex gap-2">
-                <span className="text-blue-600 dark:text-blue-400">✅</span>
-                <span>Strong background in SaaS, insurance platforms, and OTT/streaming services</span>
-              </li>
-              <li className="flex gap-2">
-                <span className="text-blue-600 dark:text-blue-400">✅</span>
-                <span>Passionate about improving development efficiency and user experience</span>
-              </li>
-            </ul>
+              <ul className="space-y-2 mb-6">
+                <li className="flex gap-2">
+                  <span className="text-blue-600 dark:text-blue-400">✅</span>
+                  <span>Experienced in React Hooks, Redux, React Query, and state management patterns</span>
+                </li>
+                <li className="flex gap-2">
+                  <span className="text-blue-600 dark:text-blue-400">✅</span>
+                  <span>Skilled in CI/CD setup, automated testing, and reusable component libraries</span>
+                </li>
+                <li className="flex gap-2">
+                  <span className="text-blue-600 dark:text-blue-400">✅</span>
+                  <span>Strong background in SaaS, insurance platforms, and OTT/streaming services</span>
+                </li>
+                <li className="flex gap-2">
+                  <span className="text-blue-600 dark:text-blue-400">✅</span>
+                  <span>Passionate about improving development efficiency and user experience</span>
+                </li>
+              </ul>
 
-            <p>
-              Always open to learning and sharing knowledge, while delivering solutions that bring real value to users and businesses.
-            </p>
+              <p>
+                Always open to learning and sharing knowledge, while delivering solutions that bring real value to users and businesses.
+              </p>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <Skills skills={skills} />
+        <Skills skills={skills} />
 
-      <Experience jobs={jobs} />
+        <Experience jobs={jobs} />
 
-      <Education education={education} />
+        <Education education={education} />
 
-      <Courses courses={courses} />
+        <Courses courses={courses} />
 
-      <Languages languages={languages} />
+        <Languages languages={languages} />
 
-      <footer className="w-full py-8 px-4 bg-gray-900 text-white text-center print:hidden">
-        <p className="text-muted-foreground">
-          © 2025 {personalInfo.name}. All rights reserved.
-        </p>
-      </footer>
-    </div>
+        <footer className="w-full py-8 px-4 bg-gray-900 text-white text-center print:hidden">
+          <p className="text-muted-foreground">
+            © 2025 {personalInfo.name}. All rights reserved.
+          </p>
+        </footer>
+      </div>
+    </>
   );
 }

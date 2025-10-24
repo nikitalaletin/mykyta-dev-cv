@@ -12,7 +12,7 @@ export function ThemeToggle({ isDark, onToggle }: ThemeToggleProps) {
       onClick={onToggle}
       variant="outline"
       size="icon"
-      className="fixed top-4 right-4 z-50 rounded-full shadow-lg"
+      className="fixed top-4 right-4 z-50 rounded-full shadow-lg print:hidden"
       aria-label="Перемкнути тему"
     >
       {isDark ? (
