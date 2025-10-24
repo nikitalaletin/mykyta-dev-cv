@@ -26,11 +26,11 @@ export function Courses({ courses }: CoursesProps) {
               <CardHeader className="pb-6">
                 <div className="flex items-start justify-between gap-3">
                   <div className="flex-grow">
-                    <CardTitle className="flex items-start gap-2 mb-2">
+                    <div className="flex items-start gap-2 mb-2">
                       <Award className="w-5 h-5 text-blue-600 dark:text-blue-400 flex-shrink-0 mt-1" />
-                      <span style={{ lineHeight: '1.75' }}>{course.name}</span>
-                    </CardTitle>
-                    <CardDescription>{course.institution}</CardDescription>
+                      <CardTitle style={{ lineHeight: '1.75' }}>{course.name}</CardTitle>
+                    </div>
+                    <CardDescription style={{ marginLeft: '28px' }}>{course.institution}</CardDescription>
                   </div>
                   <div className="flex-shrink-0">
                     <span className="inline-block px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full text-sm font-medium">

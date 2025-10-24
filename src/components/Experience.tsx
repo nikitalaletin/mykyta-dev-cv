@@ -99,8 +99,8 @@ export function Experience({ jobs }: ExperienceProps) {
 
                 <ul className="space-y-2">
                   {job.tasks.map((task, taskIndex) => (
-                    <li key={taskIndex} className="flex gap-2">
-                      <span className="text-blue-600 dark:text-blue-400 mt-1">•</span>
+                    <li key={taskIndex} className="flex gap-2 items-start">
+                      <span className="text-blue-600 dark:text-blue-400 flex-shrink-0">•</span>
                       <span className="text-foreground/80">{task}</span>
                     </li>
                   ))}
