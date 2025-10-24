@@ -24,11 +24,20 @@ export function Courses({ courses }: CoursesProps) {
           {courses.map((course, index) => (
             <Card key={index} className="hover:shadow-md transition-shadow">
               <CardHeader className="pb-6">
-                <CardTitle className="flex items-center gap-2">
-                  <Award className="w-5 h-5 text-blue-600 dark:text-blue-400 flex-shrink-0" />
-                  <span>{course.name}</span>
-                </CardTitle>
-                <CardDescription>{course.institution} • {course.year}</CardDescription>
+                <div className="flex items-start justify-between gap-3">
+                  <div className="flex-grow">
+                    <CardTitle className="flex items-start gap-2 mb-2">
+                      <Award className="w-5 h-5 text-blue-600 dark:text-blue-400 flex-shrink-0 mt-1" />
+                      <span style={{ lineHeight: '1.75' }}>{course.name}</span>
+                    </CardTitle>
+                    <CardDescription>{course.institution}</CardDescription>
+                  </div>
+                  <div className="flex-shrink-0">
+                    <span className="inline-block px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full text-sm font-medium">
+                      {course.year}
+                    </span>
+                  </div>
+                </div>
               </CardHeader>
             </Card>
           ))}

@@ -150,7 +150,7 @@ export default function App() {
       degree: "Master's degree",
       institution: "National Technical University of Ukraine 'Kyiv Polytechnic Institute'",
       field: "Telecommunication systems and networks",
-      period: "2008-2014",
+      period: "2008 - 2014",
       logo: kpiLogo,
     },
   ];
@@ -177,7 +177,7 @@ export default function App() {
       year: "2023",
     },
     {
-      name: "JS+React",
+      name: "JS + React",
       institution: "fwdays'22",
       year: "2022",
     },
