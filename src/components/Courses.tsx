@@ -1,5 +1,4 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./ui/card";
-import { GraduationCap, Award } from "lucide-react";
+import { GraduationCap, CheckCircle2 } from "lucide-react";
 
 interface Course {
   name: string;
@@ -20,25 +19,16 @@ export function Courses({ courses }: CoursesProps) {
           <h2>Courses & Certifications</h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="space-y-3">
           {courses.map((course, index) => (
-            <Card key={index} className="hover:shadow-md transition-shadow">
-              <CardHeader className="pb-6">
-                <div className="flex items-start justify-between gap-3">
-                  <div className="flex items-start gap-2 flex-grow">
-                    <Award className="w-5 h-5 text-blue-600 dark:text-blue-400 flex-shrink-0 mt-1" />
-                    <CardTitle style={{ lineHeight: '1.75' }}>
-                      {course.name} <span className="text-muted-foreground font-normal">— {course.institution}</span>
-                    </CardTitle>
-                  </div>
-                  <div className="flex-shrink-0">
-                    <span className="inline-block px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full text-sm font-medium">
-                      {course.year}
-                    </span>
-                  </div>
-                </div>
-              </CardHeader>
-            </Card>
+            <div key={index} className="flex items-start gap-3 py-2">
+              <CheckCircle2 className="w-5 h-5 text-blue-600 dark:text-blue-400 flex-shrink-0 mt-0.5" />
+              <div className="flex-grow">
+                <span className="font-medium">{course.name}</span>
+                <span className="text-muted-foreground"> | {course.institution}</span>
+                <span className="text-muted-foreground"> | {course.year}</span>
+              </div>
+            </div>
           ))}
         </div>
       </div>
