@@ -194,7 +194,7 @@ export default function App() {
   ];
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background animate-fade-in">
       <ThemeToggle isDark={isDarkMode} onToggle={toggleTheme} />
       <PrintButton />
 
