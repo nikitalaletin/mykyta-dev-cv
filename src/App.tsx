@@ -118,7 +118,7 @@ export default function App() {
       website: "https://megogo.net",
       project: "SmartTV Department",
       logo: megogoLogo,
-      technologies: ["JavaScript", "HTML5", "CSS", "SCSS", "Gulp", "Git"],
+      technologies: ["JavaScript", "HTML5", "CSS", "SCSS", "Gulp", "Git", "Adaptive Streaming"],
       tasks: [
         "Supported and enhanced Smart TV OTT/VOD services for 26+ vendors (LG, Samsung, etc.), ensuring stable performance and seamless content delivery",
         "Developed Smart TV video players, UI markup, advertisements, and landing pages on the client side, optimizing user experience across devices",
