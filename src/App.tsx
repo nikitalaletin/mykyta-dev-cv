@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { CheckCircle2 } from "lucide-react";
 import { Header } from "./components/Header";
 import { Skills } from "./components/Skills";
 import { Experience } from "./components/Experience";
@@ -208,7 +209,7 @@ export default function App() {
 
         <section className="w-full py-12 px-4 bg-white dark:bg-gray-900 print:py-8">
           <div className="max-w-5xl mx-auto">
-            <h2 className="mb-4">About Me</h2>
+            <h2 className="mb-4 font-bold">About Me</h2>
             <div className="text-foreground/80">
               <p className="mb-4">
                 I'm a Frontend Developer with 9+ years of experience specializing in React, TypeScript, and modern JavaScript.
@@ -217,19 +218,19 @@ export default function App() {
 
               <ul className="space-y-2 mb-6">
                 <li className="flex gap-2">
-                  <span className="text-blue-600 dark:text-blue-400">✅</span>
+                  <CheckCircle2 className="w-5 h-5 text-blue-600 dark:text-blue-400 flex-shrink-0 mt-0.5" />
                   <span>Experienced in React Hooks, Redux, React Query, and state management patterns</span>
                 </li>
                 <li className="flex gap-2">
-                  <span className="text-blue-600 dark:text-blue-400">✅</span>
+                  <CheckCircle2 className="w-5 h-5 text-blue-600 dark:text-blue-400 flex-shrink-0 mt-0.5" />
                   <span>Skilled in CI/CD setup, automated testing, and reusable component libraries</span>
                 </li>
                 <li className="flex gap-2">
-                  <span className="text-blue-600 dark:text-blue-400">✅</span>
+                  <CheckCircle2 className="w-5 h-5 text-blue-600 dark:text-blue-400 flex-shrink-0 mt-0.5" />
                   <span>Strong background in SaaS, insurance platforms, and OTT/streaming services</span>
                 </li>
                 <li className="flex gap-2">
-                  <span className="text-blue-600 dark:text-blue-400">✅</span>
+                  <CheckCircle2 className="w-5 h-5 text-blue-600 dark:text-blue-400 flex-shrink-0 mt-0.5" />
                   <span>Passionate about improving development efficiency and user experience</span>
                 </li>
               </ul>
@@ -241,15 +242,59 @@ export default function App() {
           </div>
         </section>
 
-        <Skills skills={skills} />
+        {/* Two column layout */}
+        <div className="w-full px-4 py-12 print:py-8">
+          <div className="max-w-5xl mx-auto">
+            <div
+              id="two-column-layout"
+              style={{
+                display: 'flex',
+                flexDirection: 'column',
+                gap: '2rem'
+              }}
+              className="print:flex-col"
+            >
+              {/* Left column - wider (2/3) */}
+              <div
+                style={{
+                  flex: '1 1 0%',
+                  minWidth: 0
+                }}
+                className="space-y-12"
+              >
+                <Experience jobs={jobs} />
+                <Courses courses={courses} />
+              </div>
 
-        <Experience jobs={jobs} />
+              {/* Right column - narrower (1/3) */}
+              <div
+                style={{
+                  flex: '0 0 auto',
+                  minWidth: 0
+                }}
+                className="space-y-12"
+              >
+                <Skills skills={skills} />
+                <Education education={education} />
+                <Languages languages={languages} />
+              </div>
+            </div>
+          </div>
+        </div>
 
-        <Education education={education} />
-
-        <Courses courses={courses} />
-
-        <Languages languages={languages} />
+        <style>{`
+          @media (min-width: 1024px) {
+            #two-column-layout {
+              flex-direction: row !important;
+            }
+            #two-column-layout > div:first-child {
+              flex: 2 !important;
+            }
+            #two-column-layout > div:last-child {
+              flex: 1 !important;
+            }
+          }
+        `}</style>
 
         <footer className="w-full py-8 px-4 bg-gray-900 text-white text-center print:hidden">
           <p className="text-muted-foreground">
