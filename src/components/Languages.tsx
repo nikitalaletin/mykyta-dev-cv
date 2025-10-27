@@ -18,17 +18,16 @@ export function Languages({ languages }: LanguagesProps) {
         <h2 className="font-bold">Languages</h2>
       </div>
 
-      <div className="grid grid-cols-1 gap-4">
+      <div className="p-4 rounded-lg border border-border bg-card hover:shadow-md transition-shadow">
         {languages.map((language, index) => (
           <div
             key={index}
-            className="flex items-center gap-3 p-4 rounded-lg border border-border bg-card hover:shadow-md transition-shadow"
+            className="flex items-center gap-3 py-3"
           >
-            <span className="text-4xl">{language.flag}</span>
-            <div>
-              <p className="text-foreground">{language.name}</p>
-              <p className="text-muted-foreground">{language.level}</p>
-            </div>
+            <span style={{ fontSize: '1.5rem' }}>{language.flag}</span>
+            <p className="text-foreground">
+              {language.name} <span className="text-muted-foreground">- {language.level}</span>
+            </p>
           </div>
         ))}
       </div>
