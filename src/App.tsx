@@ -207,7 +207,7 @@ export default function App() {
           contacts={personalInfo.contacts}
         />
 
-        <section className="w-full py-12 px-4 bg-white dark:bg-gray-900 print:py-8">
+        <section className="w-full pt-6 px-4 bg-white dark:bg-gray-900 print:py-8">
           <div className="max-w-5xl mx-auto">
             <h2 className="mb-4 font-bold">About Me</h2>
             <div className="text-foreground/80">
