@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin, Linkedin, Github } from "lucide-react";
+import { Mail, Phone, MapPin, Linkedin, Github, Send } from "lucide-react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 
 interface HeaderProps {
@@ -8,6 +8,7 @@ interface HeaderProps {
   contacts: {
     email: string;
     phone: string;
+    telegram: string;
     location: string;
     linkedin: string;
     github: string;
@@ -53,6 +54,16 @@ export function Header({ photo, name, description, contacts }: HeaderProps) {
               >
                 <Phone className="w-4 h-4" />
                 <span>{contacts.phone}</span>
+              </a>
+
+              <a
+                href={contacts.telegram}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-foreground/80 hover:text-blue-600 transition-colors print:text-foreground"
+              >
+                <Send className="w-4 h-4" />
+                <span>Telegram</span>
               </a>
 
               <a

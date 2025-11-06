@@ -18,6 +18,7 @@ export default function HomePage() {
     contacts: {
       email: "nikitalaletin@gmail.com",
       phone: "+380939751300",
+      telegram: "https://t.me/nik_orange",
       location: "Kyiv, Ukraine",
       linkedin: "https://www.linkedin.com/in/mykyta-lalietin/",
       github: "https://github.com/nikitalaletin",
