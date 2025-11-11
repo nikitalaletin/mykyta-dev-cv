@@ -115,8 +115,8 @@ export default function HomePage() {
   ];
 
   const languages = [
-    { name: "Ukrainian", level: "Native", flag: "🇺🇦" },
-    { name: "English", level: "Upper Intermediate", flag: "🇬🇧" },
+    { name: "Ukrainian", level: "Native", flag: "UA" },
+    { name: "English", level: "Upper Intermediate", flag: "GB" },
   ];
 
   const education = [
