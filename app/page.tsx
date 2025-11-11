@@ -31,6 +31,7 @@ export default function HomePage() {
     { name: "TypeScript" },
     { name: "TanStack React Query" },
     { name: "Redux" },
+    { name: "Immutable.js" },
     { name: "react-bootstrap" },
     { name: "Material-UI" },
     { name: "HTML5" },
@@ -38,6 +39,7 @@ export default function HomePage() {
     { name: "SCSS" },
     { name: "Git" },
     { name: "Webpack" },
+    { name: "Adaptive Streaming" },
   ];
 
   const jobs = [
