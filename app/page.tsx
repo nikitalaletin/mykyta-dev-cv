@@ -27,15 +27,17 @@ export default function HomePage() {
 
   const skills = [
     { name: "JavaScript" },
-    { name: "TypeScript" },
     { name: "React" },
+    { name: "TypeScript" },
+    { name: "TanStack React Query" },
     { name: "Redux" },
+    { name: "react-bootstrap" },
+    { name: "Material-UI" },
     { name: "HTML5" },
     { name: "CSS" },
     { name: "SCSS" },
     { name: "Git" },
     { name: "Webpack" },
-    { name: "Docker" },
   ];
 
   const jobs = [
