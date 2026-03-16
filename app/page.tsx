@@ -196,11 +196,11 @@ export default function HomePage() {
               <ul className="space-y-2 mb-6">
                 <li className="flex gap-2">
                   <CheckCircle2 className="w-5 h-5 text-blue-600 dark:text-blue-400 flex-shrink-0 mt-0.5" />
-                  <span>Experienced in React Hooks, Redux, React Query, and state management patterns</span>
+                  <span>Experienced in React, Redux, Tanstack Query, and state management patterns</span>
                 </li>
                 <li className="flex gap-2">
                   <CheckCircle2 className="w-5 h-5 text-blue-600 dark:text-blue-400 flex-shrink-0 mt-0.5" />
-                  <span>Skilled in CI/CD setup, automated testing, and reusable component libraries</span>
+                  <span>Skilled in CI/CD setup and reusable component libraries</span>
                 </li>
                 <li className="flex gap-2">
                   <CheckCircle2 className="w-5 h-5 text-blue-600 dark:text-blue-400 flex-shrink-0 mt-0.5" />
