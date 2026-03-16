@@ -189,14 +189,14 @@ export default function HomePage() {
             <h2 className="mb-4 font-bold">About Me</h2>
             <div className="text-foreground/80">
               <p className="mb-4">
-                I&apos;m a Frontend Developer with 9+ years of experience specializing in React, TypeScript, and modern JavaScript.
+                I&apos;m a Frontend Developer with 9+ years of experience specializing in React, TypeScript and modern JavaScript.
                 My focus is on building scalable, high-performance applications with clean architecture and pixel-perfect UI.
               </p>
 
               <ul className="space-y-2 mb-6">
                 <li className="flex gap-2">
                   <CheckCircle2 className="w-5 h-5 text-blue-600 dark:text-blue-400 flex-shrink-0 mt-0.5" />
-                  <span>Experienced in React, Redux, Tanstack Query, and state management patterns</span>
+                  <span>Experienced in React, Redux, Tanstack Query and state management patterns</span>
                 </li>
                 <li className="flex gap-2">
                   <CheckCircle2 className="w-5 h-5 text-blue-600 dark:text-blue-400 flex-shrink-0 mt-0.5" />
@@ -204,7 +204,7 @@ export default function HomePage() {
                 </li>
                 <li className="flex gap-2">
                   <CheckCircle2 className="w-5 h-5 text-blue-600 dark:text-blue-400 flex-shrink-0 mt-0.5" />
-                  <span>Strong background in SaaS, insurance platforms, and OTT/streaming services</span>
+                  <span>Strong background in SaaS, insurance platforms and OTT/streaming services</span>
                 </li>
                 <li className="flex gap-2">
                   <CheckCircle2 className="w-5 h-5 text-blue-600 dark:text-blue-400 flex-shrink-0 mt-0.5" />
